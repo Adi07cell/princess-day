@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Letter for Rishika</title>
+<meta name="description" content="Sealed with wax. Open with care.">
+<meta name="theme-color" content="#170D1B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A letter has arrived for Her Royal Highness">
+<meta property="og:description" content="Sealed with wax. Open with care. Sound on.">
+<meta property="og:image" content="https://adi07cell.github.io/princess-day/og.jpg">
+<meta property="og:url" content="https://adi07cell.github.io/princess-day/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M14 70 L8 30 L32 50 L50 18 L68 50 L92 30 L86 70Z' fill='%23E9C46A'/%3E%3Crect x='13' y='72' width='74' height='10' rx='3' fill='%23E9C46A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Grenze+Gotisch:wght@600;700&family=Pinyon+Script&family=Tiro+Bangla&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=11181345">
+</head>
+<body class="is-sealed">
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============================== PROLOGUE ============================== -->
+<div class="prologue" id="prologue">
+  <div class="prologue__inner">
+    <p class="eyebrow">By royal courier &middot; Princess Day</p>
+    <h1 class="prologue__title">A letter has arrived for<span class="script foil">Rishika</span></h1>
+    <div class="envelope" id="envelope">
+      <div class="envelope__back"></div>
+      <div class="envelope__letter">
+        <span class="script">Happy Princess Day</span>
+        <span class="envelope__crown" data-art="crown"></span>
+      </div>
+      <div class="envelope__front"></div>
+      <div class="envelope__flap"><div class="flap__outer"></div><div class="flap__lining"></div></div>
+      <button class="seal" id="seal" aria-label="Break the wax seal and open your letter">
+        <span class="seal__half seal__half--l" data-art="seal"></span>
+        <span class="seal__half seal__half--r" data-art="seal"></span>
+      </button>
+    </div>
+    <p class="prologue__hint"><span class="pulse"></span>Tap the seal &middot; sound on</p>
+  </div>
+</div>
+
+<!-- ============================== MAIN ============================== -->
+<main id="main" aria-hidden="true">
+
+  <!-- ---------- HERO ---------- -->
+  <header class="hero" id="top">
+    <div class="hero__sky" aria-hidden="true">
+      <div class="moon"></div>
+      <div class="candles" id="candles"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__once" lang="bn">এক যে ছিল রাজকন্যা…</p>
+      <p class="hero__once-en">once upon a time, there was a princess</p>
+      <button class="hero__crown" id="crown" aria-label="The crown" data-art="crown"></button>
+      <p class="hero__happy">Happy Princess Day,</p>
+      <h1 class="hero__name"><span class="script foil" id="heroName">Rishika</span></h1>
+      <p class="hero__bn" lang="bn">শুভ রাজকন্যা দিবস</p>
+      <p class="hero__line">I couldn’t take you out today,<br>so I built you somewhere to go.</p>
+    </div>
+    <a class="scroll-cue" href="#contents"><span>turn the page</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 4v15M6 13l6 6 6-6"/></svg></a>
+    <button class="hidden-bat" data-bat="1" style="--x:78%;--y:14%;--r:-12deg" aria-label="A tiny hidden bat" data-art="bat"></button>
+  </header>
+
+  <!-- ---------- CONTENTS ---------- -->
+  <section class="contents" id="contents">
+    <div class="paper page reveal">
+      <p class="eyebrow eyebrow--ink">A book in seven parts</p>
+      <h2 class="contents__title">Contents</h2>
+      <ol class="toc">
+        <li><a href="#crowning"><i>I</i><b>The Crowning</b><span></span><em>1</em></a></li>
+        <li><a href="#vault"><i>II</i><b>The Plushie Vault</b><span></span><em>4</em></a></li>
+        <li><a href="#surprise"><i>III</i><b>A Sweet Surprise</b><span></span><em>9</em></a></li>
+        <li><a href="#fortune"><i>IV</i><b>The Fortune Birds</b><span></span><em>13</em></a></li>
+        <li><a href="#tale"><i>V</i><b>A Tale Written for You</b><span></span><em>18</em></a></li>
+        <li><a href="#lab"><i>VI</i><b>The Potions Lab</b><span></span><em>27</em></a></li>
+        <li><a href="#epilogue"><i>&#10087;</i><b>Epilogue</b><span></span><em>31</em></a></li>
+      </ol>
+      <p class="contents__note">Reading time: about seven minutes. Snacks strongly recommended.</p>
+      <p class="contents__ps">P.S. Three tiny bats are hiding somewhere in this book.</p>
+      <p class="contents__margin" id="margin" hidden></p>
+    </div>
+  </section>
+
+  <!-- ---------- I. THE CROWNING ---------- -->
+  <section class="chapter" id="crowning">
+    <header class="ch-head reveal">
+      <span class="ch-num">Chapter I</span>
+      <h2>The Crowning</h2>
+      <p class="ch-sub">Every princess gets a card. Only one of these exists.</p>
+      <span class="ch-rule" data-art="flourish"></span>
+    </header>
+    <div class="pcard-stage reveal">
+      <div class="pcard" id="pcard" tabindex="0" role="button" aria-label="Princess card. Tap to flip.">
+        <div class="pcard__inner">
+          <div class="pcard__face pcard__front">
+            <div class="pcard__frame">
+              <div class="pcard__top">
+                <span class="pcard__name script">Rishika</span>
+                <span class="pcard__hp">HP <b>∞</b></span>
+              </div>
+              <div class="pcard__art">
+                <span class="pcard__monogram">R</span>
+                <span class="pcard__artcrown" data-art="crown"></span>
+                <span class="pcard__artbat" data-plush="bat"></span>
+                <span class="pcard__sparkle s1"></span><span class="pcard__sparkle s2"></span><span class="pcard__sparkle s3"></span>
+              </div>
+              <p class="pcard__type">Princess &middot; Scientist &middot; Author</p>
+              <ul class="pcard__stats" id="pstats"></ul>
+              <p class="pcard__ability"><b>Never Boring</b> <span>— passive. Any conversation with her runs three hours past bedtime.</span></p>
+              <p class="pcard__foot"><span>✦ Legendary</span><span>No. 001 / 001</span></p>
+            </div>
+            <div class="pcard__holo"></div><div class="pcard__glare"></div>
+          </div>
+          <div class="pcard__face pcard__back">
+            <div class="pcard__backart">
+              <span data-art="seal"></span>
+              <p>Rarity check: there is exactly one of these in existence.<br><span class="hand">I looked. Thoroughly.</span></p>
+            </div>
+            <div class="pcard__holo"></div>
+          </div>
+        </div>
+      </div>
+      <p class="hint-line"><span class="hand">tilt your phone · drag · tap to flip</span></p>
+    </div>
+  </section>
+
+  <!-- ---------- II. THE PLUSHIE VAULT ---------- -->
+  <section class="chapter" id="vault">
+    <header class="ch-head reveal">
+      <span class="ch-num">Chapter II</span>
+      <h2>The Plushie Vault</h2>
+      <p class="ch-sub">Seven very soft residents, each hoping to be adopted by a princess.</p>
+      <span class="ch-rule" data-art="flourish"></span>
+    </header>
+    <div class="claw reveal" id="claw">
+      <div class="claw__marquee">
+        <div class="claw__bulbs" aria-hidden="true"></div>
+        <p class="claw__title">The Plushie Vault</p>
+        <p class="claw__est">all prizes adoptable</p>
+      </div>
+      <div class="claw__glass" id="clawGlass">
+        <div class="claw__rail"></div>
+        <div class="claw__rig" id="clawRig">
+          <div class="claw__cable" id="clawCable"></div>
+          <div class="claw__head" id="clawHead">
+            <svg viewBox="0 0 60 56" aria-hidden="true">
+              <rect x="22" y="0" width="16" height="12" rx="3" fill="#E9C46A" stroke="#7a5420"/>
+              <circle cx="30" cy="16" r="7" fill="#c9a24d" stroke="#7a5420"/>
+              <circle cx="30" cy="16" r="2.4" fill="#F4B6C8"/>
+              <g class="prong prong--l"><path d="M26 18 C14 24 10 34 14 46 L18 44 C16 34 20 27 28 22Z" fill="#E9C46A" stroke="#7a5420" stroke-linejoin="round"/></g>
+              <g class="prong prong--r"><path d="M34 18 C46 24 50 34 46 46 L42 44 C44 34 40 27 32 22Z" fill="#E9C46A" stroke="#7a5420" stroke-linejoin="round"/></g>
+            </svg>
+          </div>
+        </div>
+        <div class="claw__pile" id="clawPile"></div>
+        <div class="claw__chute"><span>prize</span></div>
+        <div class="claw__streak" aria-hidden="true"></div>
+      </div>
+      <div class="claw__panel">
+        <p class="claw__status" id="clawStatus" aria-live="polite">Wait for the claw to swing over a plushie, then drop.</p>
+        <button class="btn-drop" id="clawDrop"><span>Drop</span></button>
+      </div>
+      <div class="shelf">
+        <p class="shelf__label">Adopted <b id="shelfCount">0</b>/7</p>
+        <div class="shelf__row" id="shelf"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- III. A SWEET SURPRISE ---------- -->
+  <section class="chapter" id="surprise">
+    <header class="ch-head reveal">
+      <span class="ch-num">Chapter III</span>
+      <h2>A Sweet Surprise</h2>
+      <p class="ch-sub">I couldn’t hand you a Kinder Joy today, so I made one that never runs out of surprises. Well — three times.</p>
+      <span class="ch-rule" data-art="flourish"></span>
+    </header>
+    <div class="eggzone reveal">
+      <button class="egg" id="egg" aria-label="Tap the surprise egg to open it">
+        <svg viewBox="0 0 200 240" id="eggSvg" aria-hidden="true"></svg>
+      </button>
+      <p class="egg__status" id="eggStatus" aria-live="polite">Tap the egg. Then tap it again. It’s shy.</p>
+      <div class="egg__prize" id="eggPrize" aria-live="polite"></div>
+      <button class="btn-ghost" id="eggAgain" hidden>Another egg?</button>
+      <div class="couponbook">
+        <p class="shelf__label">Coupon book <b id="couponCount">0</b>/8</p>
+        <div class="couponbook__list" id="couponList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- IV. THE FORTUNE BIRDS ---------- -->
+  <section class="chapter" id="fortune">
+    <header class="ch-head reveal">
+      <span class="ch-num">Chapter IV</span>
+      <h2>The Fortune Birds</h2>
+      <p class="ch-sub">In the old Bengali tales, two birds — Byangoma and Byangomi — sat in a tree and knew everyone’s future. They agreed to read yours. They were <em>very</em> excited.</p>
+      <span class="ch-rule" data-art="flourish"></span>
+    </header>
+    <div class="birds reveal" aria-hidden="true">
+      <svg viewBox="0 0 220 70" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 60 C60 55 120 64 216 57"/><path d="M28 59 c-4 -7 2 -11 7 -9 M190 58 c4 -7 -2 -11 -7 -9"/>
+        <g class="bird bird--a"><ellipse cx="62" cy="44" rx="14" ry="11.5"/><path d="M49 41 L39 35 L44 45"/><path d="M75.5 41.5 L82 44 L75.5 46.5"/>
+          <circle cx="68.5" cy="40" r="1.6" fill="currentColor"/><circle cx="69" cy="46" r="2.4" fill="#F4B6C8" stroke="none" opacity=".8"/>
+          <path d="M53 45 q6 6 13 0"/><path d="M55 33 l2.5 -6 l2.5 4 l2.5 -5 l2.5 5 l2.5 -4 l1 6" /><path d="M58 55.5 v4 M65 55.5 v4"/></g>
+        <g class="bird bird--b"><ellipse cx="158" cy="44" rx="14" ry="11.5"/><path d="M171 41 L181 35 L176 45"/><path d="M144.5 41.5 L138 44 L144.5 46.5"/>
+          <circle cx="151.5" cy="40" r="1.6" fill="currentColor"/><circle cx="151" cy="46" r="2.4" fill="#F4B6C8" stroke="none" opacity=".8"/>
+          <path d="M167 45 q-6 6 -13 0"/><path d="M160 32.5 c-3 -5 3 -7 3 -2 c0 -5 6 -3 3 2" /><path d="M155 55.5 v4 M162 55.5 v4"/></g>
+        <path d="M110 26 c-3 -4 -8 -1 -5 3 l5 5 l5 -5 c3 -4 -2 -7 -5 -3z" fill="#F4B6C8" fill-opacity=".5"/>
+      </svg>
+    </div>
+    <div class="tarot reveal" id="tarot"></div>
+    <div class="readings" id="readings" aria-live="polite"></div>
+    <button class="btn-ghost" id="tarotAgain" hidden>Ask the birds again</button>
+    <button class="hidden-bat" data-bat="2" style="--x:6%;--y:92%;--r:18deg" aria-label="A tiny hidden bat" data-art="bat"></button>
+  </section>
+
+  <!-- ---------- V. A TALE WRITTEN FOR YOU ---------- -->
+  <section class="chapter" id="tale">
+    <header class="ch-head reveal">
+      <span class="ch-num">Chapter V</span>
+      <h2>A Tale Written for You</h2>
+      <p class="ch-sub">Horror, romance, a little thriller. You’re the heroine. You choose.</p>
+      <span class="ch-rule" data-art="flourish"></span>
+    </header>
+    <article class="paper book reveal" id="book">
+      <div class="book__text" id="bookText"></div>
+      <div class="book__choices" id="bookChoices"></div>
+      <div class="book__end" id="bookEnd" hidden>
+        <p class="book__tbc">— To be continued… <span class="hand">if the author agrees.</span></p>
+        <label class="book__label" for="chapter2">Your turn, author. How does Chapter Two begin?</label>
+        <textarea id="chapter2" rows="3" placeholder="Chapter Two. It began with…"></textarea>
+        <div class="book__actions">
+          <a class="btn-ink" id="sendChapter" target="_blank" rel="noopener">Send it — I’ll read it tonight</a>
+          <button class="btn-link" id="taleAgain">Read it again</button>
+        </div>
+      </div>
+      <button class="vial" id="vial" aria-label="A small potion vial">
+        <svg viewBox="0 0 40 64" aria-hidden="true"><path d="M15 4 h10 M16 4 v14 C8 22 5 30 5 40 C5 53 12 60 20 60 C28 60 35 53 35 40 C35 30 32 22 24 18 V4" fill="#fcd9e5" fill-opacity=".35" stroke="#6B1E3A" stroke-width="2" stroke-linejoin="round"/><path d="M7 40 C12 36 18 44 24 40 C28 37 31 38 33 40 C33 52 27 58 20 58 C13 58 7 52 7 40Z" fill="#F4B6C8"/><path d="M14 6 h12 v-3 h-12z" fill="#6B1E3A"/><circle cx="16" cy="47" r="1.6" fill="#fff" opacity=".8"/><circle cx="23" cy="51" r="1.1" fill="#fff" opacity=".7"/><path d="M11 30 C10 34 10 37 11 40" stroke="#fff" stroke-opacity=".7" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+      </button>
+    </article>
+  </section>
+
+  <!-- ---------- VI. THE POTIONS LAB ---------- -->
+  <section class="chapter" id="lab">
+    <header class="ch-head reveal">
+      <span class="ch-num">Chapter VI</span>
+      <h2>The Potions Lab</h2>
+      <p class="ch-sub">From the notebook of the Half-Blood Princess. Pick three ingredients and brew. Nine secret recipes are hidden in here — the riddles are in the recipe book.</p>
+      <span class="ch-rule" data-art="flourish"></span>
+    </header>
+    <div class="lab reveal">
+      <div class="lab__bench">
+        <div class="flask" id="flask" aria-hidden="true">
+          <svg viewBox="0 0 160 214">
+            <defs><clipPath id="flaskIn"><path d="M71 22 V77 A53 53 0 1 0 89 77 V22 Z"/></clipPath></defs>
+            <g class="flask__steam"><circle cx="76" cy="10" r="5"/><circle cx="86" cy="4" r="4"/><circle cx="80" cy="-4" r="6"/></g>
+            <path d="M44 196 H116 M56 196 L48 212 M104 196 L112 212" stroke="#A8782F" stroke-width="3" stroke-linecap="round"/>
+            <ellipse class="flask__flame" cx="80" cy="190" rx="5" ry="7"/>
+            <g clip-path="url(#flaskIn)">
+              <rect width="160" height="214" fill="rgba(255,255,255,.05)"/>
+              <g class="flask__liquid">
+                <path class="flask__wave" d="M-160 0 q20 -7 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 V120 H-160Z"/>
+                <g class="flask__bubbles"><circle cx="62" cy="36" r="3"/><circle cx="84" cy="42" r="2"/><circle cx="98" cy="34" r="2.6"/><circle cx="74" cy="44" r="1.6"/></g>
+              </g>
+            </g>
+            <path d="M71 22 V77 A53 53 0 1 0 89 77 V22" fill="none" stroke="#FCEFF2" stroke-opacity=".75" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M64 22 H96" stroke="#FCEFF2" stroke-opacity=".85" stroke-width="5" stroke-linecap="round"/>
+            <path d="M40 118 C38 130 40 144 48 156" stroke="#fff" stroke-opacity=".45" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <rect x="62" y="132" width="36" height="20" rx="2" fill="#F8EDE3" stroke="#A8782F" stroke-width=".8"/>
+            <text x="80" y="146" text-anchor="middle" font-family="Cormorant Garamond, serif" font-weight="700" font-size="11" fill="#6B1E3A">No. 9¾</text>
+          </svg>
+        </div>
+        <p class="lab__mix" id="labMix" aria-live="polite">Pick three ingredients from the shelf.</p>
+        <button class="btn-seal" id="brew" disabled><span>Brew</span></button>
+      </div>
+      <div class="jars" id="jars" role="group" aria-label="Ingredients"></div>
+    </div>
+    <div class="recipes reveal">
+      <p class="shelf__label">Recipe book <b id="recipeCount">0</b>/9</p>
+      <ol class="recipes__list" id="recipes"></ol>
+    </div>
+    <button class="hidden-bat" data-bat="3" style="--x:88%;--y:4%;--r:8deg" aria-label="A tiny hidden bat" data-art="bat"></button>
+  </section>
+
+  <!-- ---------- EPILOGUE ---------- -->
+  <section class="chapter epilogue" id="epilogue">
+    <header class="ch-head reveal">
+      <span class="ch-num">Epilogue</span>
+      <h2>A Letter</h2>
+      <span class="ch-rule" data-art="flourish"></span>
+    </header>
+    <article class="paper letter reveal" id="letter">
+      <p class="letter__hi script">Rishika,</p>
+      <div class="letter__body" id="letterBody"></div>
+      <p class="letter__sign"><span class="script">— <span id="signOff"></span></span></p>
+      <span class="letter__plush" id="letterPlush" aria-hidden="true"></span>
+    </article>
+
+    <div class="wish reveal" id="wish">
+      <p class="wish__ask">Make a wish. Then press &amp; hold the flame to blow it out.</p>
+      <button class="wish__candle" id="wishCandle" aria-label="Press and hold to blow out the candle">
+        <span class="wc__glow"></span>
+        <span class="wc__flame"></span>
+        <span class="wc__wick"></span>
+        <span class="wc__body"><span class="wc__drip"></span></span>
+        <svg class="wc__smoke" viewBox="0 0 40 120" aria-hidden="true"><path d="M20 118 C10 100 30 88 20 70 C10 52 30 40 20 22 C14 12 22 6 20 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <p class="wish__done" id="wishDone" aria-live="polite"></p>
+    </div>
+
+    <div class="authornote reveal">
+      <p class="authornote__k">Author’s note</p>
+      <p>If you enjoyed this chapter, don’t forget to vote — and leave a comment. The author reads every single one.</p>
+      <a class="vote" id="vote" target="_blank" rel="noopener" aria-label="Vote for this story">
+        <span class="vote__star" data-art="star"></span><span>Vote</span>
+      </a>
+    </div>
+
+    <footer class="colophon">
+      <span class="ch-rule" data-art="flourish"></span>
+      <p>Written, drawn &amp; composed for <span class="script">Rishika</span></p>
+      <p class="colophon__date" id="dateLine"></p>
+      <p class="colophon__ps" id="batHint">P.S. Have you found all three bats?</p>
+      <a href="#top" class="btn-link">Back to the beginning</a>
+    </footer>
+  </section>
+</main>
+
+<!-- ============================== FLOATING UI ============================== -->
+<div class="dock" id="dock" hidden>
+  <button class="dock__play" id="dockPlay" aria-label="Pause music">
+    <span class="eq"><i></i><i></i><i></i><i></i></span>
+  </button>
+  <button class="dock__info" id="dockInfo" aria-expanded="false" aria-controls="dockPanel">
+    <span class="dock__title" id="dockTitle">Rishika’s Waltz</span>
+    <span class="dock__mood" id="dockMood">Sweet</span>
+  </button>
+  <div class="dock__panel" id="dockPanel" hidden>
+    <p class="dock__note">This isn’t a recording. Every note is played live on your phone, composed just for you — and on Auto, the score changes with each chapter.</p>
+    <p class="dock__k">Pick a mood</p>
+    <div class="dock__moods" id="dockMoods"></div>
+    <p class="dock__k">Or, if you’d rather a real song</p>
+    <div class="dock__songs" id="dockSongs"></div>
+  </div>
+</div>
+<div class="batcount" id="batcount" hidden><span data-art="bat"></span><b id="batNum">0</b>/3</div>
+<div class="ribbon" id="ribbon" aria-hidden="true"><span class="ribbon__bow" id="ribbonBow"></span></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal" id="modal" hidden>
+  <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__art" id="modalArt"></div>
+    <p class="modal__kicker" id="modalKicker"></p>
+    <h3 class="modal__title" id="modalTitle"></h3>
+    <p class="modal__body" id="modalBody"></p>
+    <button class="btn-ghost" id="modalClose">Keep</button>
+  </div>
+</div>
+
+<script src="content.js?v=11181345"></script>
+<script src="audio.js?v=11181345"></script>
+<script src="art.js?v=11181345"></script>
+<script src="core.js?v=11181345"></script>
+<script src="chapters.js?v=11181345"></script>
+<script src="main.js?v=11181345"></script>
+</body>
+</html>
